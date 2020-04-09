@@ -6,9 +6,28 @@
     --spacer: #ECEAE6;
     --text-nav-color: #707070;
     --header-liner: #806518;
+    --text-hover-light-1: #cfd5ec;
+    --text-hover-light-2: #a5b0dc;
+    --transition-speed: 600ms;
+    --transition-speed-box: 600ms;
+    --transition-speed-table: calc(var(--transition-speed)/2);
+    --transition-speed-inputfield: calc(var(--transition-speed)/4);
 
     font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+
+    scrollbar-width: thin; /*for firefox*/
 }
+:root::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+:root::-webkit-scrollbar-track {
+}
+
+:root::-webkit-scrollbar-thumb {
+}
+
 body {
     background-color: var(--bg-color-2);
     padding: 0px;
@@ -19,6 +38,7 @@ a {
     color: inherit;
     font-size: inherit;
 }
+
 /*Nav design*/
     nav {
         display: flex;
@@ -108,3 +128,41 @@ a {
         scale: 60%;
         margin-top: -30rem;
     }
+
+    .main-element h2 {
+        font-size: 40px;
+        font-weight: normal;
+    }
+    .main-element h2 span {
+        padding-bottom: 5px;
+        padding-right: 10px;
+        border-bottom: 5px solid var(--header-liner);
+    }
+    .main-element p {
+        font-size: 20px;
+    }
+
+
+
+/*footer*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        background-color: var(--bg-color-1);
+    }
+    footer a {
+        transition: color var(--transition-speed-inputfield) ease;
+        color: var(--text-hover-light-1);
+    }
+    footer a:hover {
+        transition: color var(--transition-speed-inputfield) ease;
+        color: var(--text-hover-light-2)
+    }
+    .footer-element {
+        padding-right: 1rem;
+    }
+    .footer-element:last-child {
+        padding-right: 0rem;
+    }
+    
