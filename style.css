@@ -10,6 +10,7 @@
     --text-hover-light-2: #a5b0dc;
     --text-hover-dark-1: #354588;
     --text-hover-dark-2: #5165bb;
+    --question-box-background: #FBF7EA;
     --transition-speed: 600ms;
     --transition-speed-box: 600ms;
     --transition-speed-table: calc(var(--transition-speed)/2);
@@ -62,11 +63,11 @@ a {
         background-color: var(--spacer);
     }
     .nav-link-a {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         white-space: nowrap;
     }
     .nav-link-a:hover {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         white-space: nowrap;
         color: var(--text-hover-dark-1)
     }
@@ -155,20 +156,90 @@ a {
         font-size: 20px;
     }
     .main-element:nth-child(odd) a {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         color: var(--text-hover-light-1);
     }
     .main-element:nth-child(odd) a:hover {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         color: var(--text-hover-light-2)
     }
     .main-element:nth-child(even) a {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         color: var(--text-hover-dark-1);
     }
     .main-element:nth-child(even) a:hover {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         color: var(--text-hover-dark-2)
+    }
+
+
+    /*qustion section*/
+    
+    .question-section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .question-element {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .question-header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: var(--spacer);
+        font-size: 25px;
+        font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+    .question-header h4 {
+        font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        padding-bottom: 5px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .x-icon {
+        transition: rotate var(--transition-speed) ease;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        rotate: 0deg;
+    }
+    .question-body {
+        overflow-y: hidden;
+        padding: 0.5rem;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--question-box-background);
+        transition: max-height var(--transition-speed) ease;
+    }
+    
+    /* cusotm question max heights */
+    .question1-body {
+        max-height: 67px;
+    }
+    .question2-body {
+        max-height: 67px;
+    }
+    .question3-body {
+        max-height: 67px;
+    }
+    /* closing classes */
+    .icon-closed {
+        transition: rotate var(--transition-speed) ease;
+        rotate: 45deg;
+    }
+    .body-closed {
+        transition: max-height var(--transition-speed) ease;
+        max-height: 0px;
+        overflow-y: hidden;
     }
 
 /*footer*/
@@ -179,11 +250,11 @@ a {
         background-color: var(--bg-color-1);
     }
     footer a {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         color: var(--text-hover-light-1);
     }
     footer a:hover {
-        transition: color var(--transition-speed-inputfield) ease;
+        transition: color var(--transition-speed) ease;
         color: var(--text-hover-light-2)
     }
     .footer-element {

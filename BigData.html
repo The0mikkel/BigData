@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <link rel="icon" type="image/png" href="icons/server-solid.svg"/>
+    <script src="script.js"></script>
     <title>BigData</title>
 </head>
 <body>
@@ -41,6 +42,41 @@
             <h2>
                 <span>Spørgsmål og svar</span>
             </h2>
+            <div class="question-section">
+                <div id="question1" class="question-element closed">
+                    <div id="question1-header" class="question-header" onclick="openQuestion('question1')">
+                        <h4>Spørgsmål 1</h4>
+                        <span id="question1-icon" class="material-icons x-icon icon-closed">close</span>
+                    </div>
+                    <div id="question1-body" class="question1-body question-body body-closed">
+                        <p>
+                            Hey, dette er en test
+                        </p>
+                    </div>
+                </div>  
+                <div id="question2" class="question-element closed">
+                    <div id="question1-header" class="question-header" onclick="openQuestion('question2')">
+                        <h4>Spørgsmål 2</h4>
+                        <span id="question2-icon" class="material-icons x-icon icon-closed">close</span>
+                    </div>
+                    <div id="question2-body" class="question2-body question-body body-closed">
+                        <p>
+                            Hey, dette er en test
+                        </p>
+                    </div>
+                </div>
+                <div id="question3" class="question-element closed">
+                    <div id="question3-header" class="question-header" onclick="openQuestion('question3')">
+                        <h4>Spørgsmål 2</h4>
+                        <span id="question1-icon" class="material-icons x-icon icon-closed">close</span>
+                    </div>
+                    <div id="question3-body" class="question3-body question-body body-closed">
+                        <p>
+                            Hey, dette er en test
+                        </p>
+                    </div>
+                </div>  
+            </div>
         </div>
     </main>
     <footer class="main-element">
