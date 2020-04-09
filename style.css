@@ -8,6 +8,8 @@
     --header-liner: #806518;
     --text-hover-light-1: #cfd5ec;
     --text-hover-light-2: #a5b0dc;
+    --text-hover-dark-1: #354588;
+    --text-hover-dark-2: #5165bb;
     --transition-speed: 600ms;
     --transition-speed-box: 600ms;
     --transition-speed-table: calc(var(--transition-speed)/2);
@@ -20,12 +22,6 @@
 :root::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
-}
-
-:root::-webkit-scrollbar-track {
-}
-
-:root::-webkit-scrollbar-thumb {
 }
 
 body {
@@ -66,7 +62,13 @@ a {
         background-color: var(--spacer);
     }
     .nav-link-a {
+        transition: color var(--transition-speed-inputfield) ease;
         white-space: nowrap;
+    }
+    .nav-link-a:hover {
+        transition: color var(--transition-speed-inputfield) ease;
+        white-space: nowrap;
+        color: var(--text-hover-dark-1)
     }
 /*Main design*/
     main {
@@ -76,7 +78,6 @@ a {
         margin: 0px;
     }
     .main-element {
-        padding-top: 2rem;
         padding-bottom: 2rem;
     }
     .main-element:nth-child(odd) {
@@ -90,9 +91,14 @@ a {
     /*for large screens*/
     @media screen and (min-width: 1400px) {
         .main-element {
-        padding-left: 400px;
-        padding-right: 400px;
-        width: calc(100% - 400px - 400px);
+            padding-left: 400px;
+            padding-right: 400px;
+            width: calc(100% - 400px - 400px);
+        }
+        .main-element-landing {
+            padding-left: 400px;
+            padding-right: 400px;
+            width: calc(100% - 400px - 400px);
         }
     }
 
@@ -103,14 +109,21 @@ a {
             padding-right: 20%;
             width: 60%;
         }
+        .main-element-landing {
+            padding-left: 20%;
+            padding-right: 20%;
+            width: 60%;
+        }
     }
 
     .main-element-landing {
-        padding-top: 2rem;
+        padding-top: 5rem;
         padding-bottom: 0rem;
-        margin-bottom: -5rem;
+        margin-bottom: -4rem;
+        background: var(--bg-color-1);
+        color: var(--text-color-1)
     }
-    .main-element h1 {
+    .main-element-landing h1 {
         font-size: 60px;
         font-weight: normal;
     }
@@ -141,8 +154,22 @@ a {
     .main-element p {
         font-size: 20px;
     }
-
-
+    .main-element:nth-child(odd) a {
+        transition: color var(--transition-speed-inputfield) ease;
+        color: var(--text-hover-light-1);
+    }
+    .main-element:nth-child(odd) a:hover {
+        transition: color var(--transition-speed-inputfield) ease;
+        color: var(--text-hover-light-2)
+    }
+    .main-element:nth-child(even) a {
+        transition: color var(--transition-speed-inputfield) ease;
+        color: var(--text-hover-dark-1);
+    }
+    .main-element:nth-child(even) a:hover {
+        transition: color var(--transition-speed-inputfield) ease;
+        color: var(--text-hover-dark-2)
+    }
 
 /*footer*/
     footer {
@@ -164,5 +191,10 @@ a {
     }
     .footer-element:last-child {
         padding-right: 0rem;
+    }
+    footer h3 {
+        font-size: 25px;
+        font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
     }
     
