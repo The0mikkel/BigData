@@ -1,0 +1,105 @@
+:root {
+    --bg-color-1: #141A33;
+    --bg-color-2: white;
+    --text-color-1: white;
+    --text-color-2: var(--bg-color-1);
+    --spacer: #ECEAE6;
+    --text-nav-color: #707070;
+    --header-liner: #806518;
+
+    font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: var(--bg-color-2);
+    padding: 0px;
+    margin: 0px;
+}
+/*Nav design*/
+    nav {
+        display: flex;
+        justify-content: space-between;
+        color: var(--text-nav-color);
+        align-items: baseline;
+        padding-bottom:0.5rem;
+    }
+    .nav-element {
+        padding: 1rem;
+    }
+    #page-titel {
+        font-size: 30px;
+    }
+    .nav-links {
+        font-size: 22px;
+    }
+    .nav-links-spacer {
+        display: inline-block;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        width: 3px;
+        height: 2rem;
+        margin-bottom: -0.5rem;
+        background-color: var(--spacer);
+    }
+    .nav-link-a {
+        white-space: nowrap;
+    }
+/*Main design*/
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    .main-element {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .main-element:nth-child(odd) {
+        background: var(--bg-color-1);
+        color: var(--text-color-1)
+    }
+    .main-element:nth-child(even) {
+        background: var(--bg-color-2);
+        color: var(--text-color-2);
+    }
+    /*for large screens*/
+    @media screen and (min-width: 1400px) {
+        .main-element {
+        padding-left: 400px;
+        padding-right: 400px;
+        width: calc(100% - 400px - 400px);
+        }
+    }
+
+    /*for small screens*/
+    @media screen and (max-width: 1400px) {
+        .main-element {
+            padding-left: 20%;
+            padding-right: 20%;
+            width: 60%;
+        }
+    }
+
+    .main-element-landing {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        margin-bottom: -5rem;
+    }
+    .main-element h1 {
+        font-size: 60px;
+        font-weight: normal;
+    }
+    .landing-divider {
+        display: inline-block;
+        /*margin-top: 1rem;
+        margin-bottom: 1rem;*/
+        width: 500px;
+        height: 5px;
+        background-color: var(--header-liner);
+    }
+    #bigDataPic {
+        display: block;
+        margin-left: 30rem;
+        scale: 60%;
+        margin-top: -30rem;
+    }
