@@ -19,12 +19,20 @@
     font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
 
     scrollbar-width: thin; /*for firefox*/
+    overflow-x: hidden;
 }
 :root::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
 }
+:root::-webkit-scrollbar-track {
+    background: var(--spacer);
+}
 
+:root::-webkit-scrollbar-thumb {
+    background: var(--text-hover-light-2);
+    height: 50%;
+}
 body {
     background-color: var(--bg-color-2);
     padding: 0px;
@@ -139,8 +147,9 @@ a {
     #bigDataPic {
         display: block;
         margin-left: 30rem;
-        scale: 60%;
+        transform: scale(0.6);
         margin-top: -30rem;
+        overflow: hidden;
     }
 
     .main-element h2 {
@@ -205,10 +214,10 @@ a {
         margin-bottom: 1rem;
     }
     .x-icon {
-        transition: rotate var(--transition-speed) ease;
+        transition: transform var(--transition-speed) ease;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     .question-body {
         overflow-y: hidden;
@@ -233,8 +242,8 @@ a {
     }
     /* closing classes */
     .icon-closed {
-        transition: rotate var(--transition-speed) ease;
-        rotate: 45deg;
+        transition:transform  var(--transition-speed) ease;
+        transform: rotate(45deg);
     }
     .body-closed {
         transition: max-height var(--transition-speed) ease;
@@ -243,17 +252,21 @@ a {
     }
 
 /*footer*/
+    #footer {
+        background-color: var(--bg-color-1);
+        color: var(--text-color-1);
+    }
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;   
         background-color: var(--bg-color-1);
     }
-    footer a {
+    #footer a {
         transition: color var(--transition-speed) ease;
         color: var(--text-hover-light-1);
     }
-    footer a:hover {
+    #footer a:hover {
         transition: color var(--transition-speed) ease;
         color: var(--text-hover-light-2)
     }
@@ -263,7 +276,7 @@ a {
     .footer-element:last-child {
         padding-right: 0rem;
     }
-    footer h3 {
+    #footer h3 {
         font-size: 25px;
         font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
         font-weight: normal;
