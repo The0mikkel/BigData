@@ -1,0 +1,64 @@
+/*Mobile styles*/
+.not-mobile {
+    display: none;
+    visibility: hidden;
+}
+#bigDataPic {
+    display: none;
+}
+#page-titel {
+    padding-left: 0%;
+}
+#nav {
+    padding-left: 20%;
+}
+.nav-element {
+    padding-left: 0%;
+}
+
+
+/* Mobile main design */
+.main-element-landing {
+    margin-bottom: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.main-element-landing h1 {
+    font-size: 40px;
+}
+.landing-divider {
+    width: 80%;
+}
+
+.main-element h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 0rem;
+}
+.main-element h2 span {
+    padding-right: 10px;
+    border-bottom: 0px solid;
+    margin-bottom: -1rem;
+}
+.main-element p {
+    font-size: 20px;
+}
+.mobile-devider {
+    background-color: var(--header-liner);
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    margin-top: -2rem;
+}
+.question-devider {
+    margin-bottom: 1rem;
+}
+.question-section {
+    width: 100%;
+}
+
+/* footer mobile design */
+footer {
+    flex-direction: column;
+    background-color: #141A33;
+}
