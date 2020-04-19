@@ -58,6 +58,38 @@
     width: 100%;
 }
 
+/* game design page */
+.game-picture, .game-picture2 {
+    display: none;
+}
+.game-picture-phone-element {
+    display: block;
+    height: 150px;
+}
+.game-picture-phone {
+    display: block;
+    width: 64%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    clip-path: polygon(0% 0%, 0% 100%, 55% 100%, 100% 0%);
+    shape-outside:polygon(0% 0%, 0% 100%, 55% 100%, 100% 0%);
+    position: absolute;
+}
+.game-picture-phone2 {
+    display: block;
+    clip-path: polygon(45% 0%, 0% 100%, 100% 100%, 100% 0%);
+    shape-outside:polygon(45% 0%, 0% 100%, 100% 100%, 100% 0%);
+    position: absolute;
+    margin-left: calc(100% - 64% );
+}
+@media only screen and (orientation: landscape) {
+    .game-picture-phone-element {
+        display: block;
+        height: 300px;
+    }
+}
+
 /* footer mobile design */
 footer {
     flex-direction: column;

@@ -27,23 +27,60 @@
             <span id="page-titel"><a href="/BigData/">Datatilsynet</a></span>
         </div>
         <div class="nav-element">
-            <span class="nav-links not-mobile"><a class="nav-link-a" href="BigData.html">Om big data</a><i class="nav-links-spacer"></i><a class="nav-link-a" href="spil.html">Spil titel</a><i class="nav-links-spacer"></i><a class="nav-link-a" href="projekt.html">Til hovedside</a></span>
+            <span class="nav-links not-mobile">
+                <a class="nav-link-a" href="BigData.html">Om big data</a><i class="nav-links-spacer"></i>
+                <a class="nav-link-a" href="spil.html">Data Hunting</a><i class="nav-links-spacer"></i>
+                <a class="nav-link-a" href="projekt.html">Hovedside</a></span>
+            </span>
         </div>
     </nav>
     <main>
-        <div class="main-element">
+        <div class="main-element game-element">
+            <img src='/BigData/icons/X3aydm.jpg' class='game-picture'>
             <h2>
-                <span>Spil titel</span>
+                <span>Data Hunting</span>
             </h2>
             <span class="mobile-devider"></span>
-            <p>Big data er.. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>
+                
+                Spillet <i>Data Hunting</i> går ud på at stjæle dine data tilbage fra store virksomheder.<br>
+                De har taget dine data uden du rigtigt har lagt mærke til det, og det er du som spiller meget utilfreds med.<br>
+                Der vil undervejs være modstandere som simulere alle de forskellige beskyttelses metoder firmaer har imod sådanne angreb!
+            </p>
+            <img src='/BigData/icons/X3aydm.jpg' class='game-picture game-picture2'>
         </div>
-        <div class="main-element">
+        <div class='game-picture-phone-element'>
+            <img src='/BigData/icons/X3aydm.jpg' class='game-picture-phone'>
+            <img src='/BigData/icons/X3aydm.jpg' class='game-picture-phone game-picture-phone2'>
+        </div>
+        <div></div>
+        <div class="main-element game-description-element">
             <h2>
                 <span>Download spillet</span>
             </h2>
             <span class="mobile-devider"></span>
-            <p>Big data er.. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>
+                Stjæl! Ødelæg! og Angrib! Det er tre ord, som beskriver "Data Hunting".<br>
+                I spillet vil du opleve en grafik, som gør at du kan leve dig fuldt ud, ind i spillet.<br>
+                Allerede fra du åbner spillet, kender du din mission. Din mission er: "Stjæl dine data tilbage".<br> 
+                Du vil opleve, hvordan det er at bryde ind hos nogle af de største Techgiganter.<br>
+                Du kan vælge at stjæle dine data tilbage, eller destruere serverne. 
+                Men pas på! Det er ikke så let som det lyder. Undervejs vil du støde på de mange udfordringer der er ved at bryde ind.<br>
+                Stederne er nemlig top sikret, og du skal derfor gøre dit bedste for at komme levende ud.<br>
+                Lyder det som et spil for dig?<br><br>
+                Download spillet nedenfor, og se om du kan klare den eneste mission, som er i spillet.<br>
+                Du er meget velkommen til at dele din score med os på Facebook, i vores kommentarfelt.<br>
+                God spillyst.<br>
+                Datatilsynets IT-Afdeling<br><br>
+
+                OBS! Spillet er i Beta, og der kan derfor forekomme fejl og bugs i spillet. Hvis dette skulle være tilfældet, ville vi blive meget glade for, at du kontaktede os på vores mail, eller på Facebook.
+            </p>
+            <button class='game-download btn' id='game-download-button'>Download</button>
+            <script>
+                if (CheckDevice()) {
+                    document.getElementById('game-download-button').innerHTML = 'Kun tilgængelig på pc';
+                }
+            </script>
         </div>
     </main>
     <footer class="main-element"  id="footer">
