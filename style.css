@@ -376,7 +376,7 @@ a {
     
     /* cusotm question max heights */
     .question1-body {
-        max-height: 67px;
+        max-height: 200px;
     }
     .question2-body {
         max-height: 67px;
