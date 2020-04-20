@@ -263,7 +263,7 @@ a {
         /* Standard setup */
         .game-picture {
             clip-path: polygon(40% 0%, 0% 100%, 100% 100.00%, 100% 0%);
-            shape-outside: polygon(40% 0%, 0% 100%, 100% 100.00%, 100% 0%);
+            shape-outside: polygon(5% 0%, -5% 100%, 100% 100%, 100% 0%);
             z-index: 50;
             position: relative;
             
