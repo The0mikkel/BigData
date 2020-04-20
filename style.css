@@ -263,7 +263,7 @@ a {
         /* Standard setup */
         .game-picture {
             clip-path: polygon(40% 0%, 0% 100%, 100% 100.00%, 100% 0%);
-            shape-outside: polygon(5% 0%, -5% 100%, 100% 100%, 100% 0%);
+            shape-outside: polygon(35% 0%, -5% 100%, 100% 100%, 100% 0%);
             z-index: 50;
             position: relative;
             
@@ -283,7 +283,7 @@ a {
         }
 
         /*for medium screens*/
-        @media screen and (min-width: 1181px) and (max-width: 1600px) {
+        @media screen and (min-width: 1230px) and (max-width: 1600px) {
             .game-picture {
                 display: block;
                 width: 700px;
@@ -296,7 +296,7 @@ a {
 
 
         /*for small screens*/
-        @media screen and (max-width: 1180px) {
+        @media screen and (max-width: 1230px) {
             
             .game-picture {
                 order: 10;
