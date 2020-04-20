@@ -58,6 +58,79 @@
     width: 100%;
 }
 
+    /*qustion section*/
+    
+    .question-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .question-element {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .question-header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: var(--spacer);
+        font-size: 25px;
+        font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+    .question-header h4 {
+        font-family: "Segoe UI", "open sans", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        padding-bottom: 5px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .x-icon {
+        display: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        transform: rotate(0deg);
+    }
+    .question-body {
+        overflow-y: hidden;
+        padding: 0.5rem;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        transition: max-height var(--transition-speed) ease;
+    }
+    
+    /* cusotm question max heights */
+    .question1-body {
+        max-height: unset;
+    }
+    .question2-body {
+        max-height: unset;
+    }
+    .question3-body {
+        max-height: unset;
+    }
+    .question4-body {
+        max-height: unset;
+    }
+    /* closing classes */
+    .icon-closed {
+        display: none;
+        transition:transform  var(--transition-speed) ease;
+        transform: rotate(45deg);
+    }
+    .body-closed {
+        transition: max-height var(--transition-speed) ease;
+        max-height: unset;
+        overflow-y: hidden;
+    }
+
 /* game design page */
 .game-picture, .game-picture2 {
     display: none;
@@ -89,6 +162,10 @@
         height: 300px;
     }
 }
+
+
+
+
 
 /* footer mobile design */
 footer {
